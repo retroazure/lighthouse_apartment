@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&display=swap');
+
+.font-bellota {
+  font-family: 'Bellota', sans-serif;
+}
+
