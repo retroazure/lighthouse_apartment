@@ -4,7 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bellota:wght@400;700&display=swap');
 
-.font-bellota {
-  font-family: 'Bellota', sans-serif;
+:root {
+  --font-bellota: 'Bellota', sans-serif;
+  --font-bellota-text: 'Bellota_Text', sans-serif;
 }
+
+body {
+  font-family: var(--font-bellota);
+}
+
+.font-bellota {
+  font-family: var(--font-bellota);
+}
+
+.font-bellota-text {
+  font-family: var(--font-bellota-text);
+}
+
 
