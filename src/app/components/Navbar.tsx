@@ -1,17 +1,25 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }, [isOpen]);
+
   const handleLinkClick = () => {
     setIsOpen(false);
   };
 
   return (
-    <nav className="bg-white shadow-sm relative">
+    <nav className="bg-white shadow-sm relative z-50">
       <div className="flex justify-between items-center px-8 py-4 md:px-16 lg:px-24">
         <div className="text-2xl font-bellota text-blue-500 md:text-2xl text-center w-full md:w-auto">
           <Link href="/">
@@ -44,8 +52,8 @@ const Navbar: React.FC = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="md:hidden absolute inset-x-0 top-full flex flex-col items-center justify-start bg-white space-y-4 text-xl font-bellota z-50"
-            style={{ height: 'calc(100vh - 64px)', paddingTop: '1rem' }} // Added padding-top for extra space
+            className="md:hidden fixed inset-0 top-16 flex flex-col items-center justify-start bg-white space-y-4 text-xl font-bellota z-40"
+            style={{ height: 'calc(100vh - 64px)', paddingTop: '1rem' }}
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0 }}
@@ -65,3 +73,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+

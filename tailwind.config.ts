@@ -14,7 +14,7 @@ const config: Config = {
         white: '#FFFFFF',
         offWhite: '#FCF9F1',
         lightGray: '#F6F3F3',
-        blue: '#59A1CC',
+        blue: '#6AB2DD', // Lightened blue color
         beige: '#F4EFE2',
       },
     },
