@@ -10,7 +10,7 @@ const Home: React.FC = () => {
           src="/assets/main_scenery.jpg"
           alt="Background Image"
           fill
-          style={{ objectFit: 'cover', opacity: 0.85 }}
+          style={{ objectFit: 'cover', opacity: 0.80 }}
           className="h-full w-full md:h-[750px]"
           quality={100}
           priority
@@ -26,8 +26,8 @@ const Home: React.FC = () => {
           >
             Book Now
           </a>
-          <div className="mt-2 text-black text-[14px] font-normal text-center w-full max-w-[200px]">
-            We also provide guest transfer<br />service with our partners
+          <div className="mt-2 text-black text-[16px] font-semi-bold text-center w-full max-w-[200px]">
+            Guest transfer is available with our partners
           </div>
         </div>
       </section>
