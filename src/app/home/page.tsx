@@ -145,7 +145,7 @@ const Home: React.FC = () => {
           Contact Us
         </h2>
         <p className="font-bellota text-2xl md:text-3xl lg:text-4xl mt-2 mb-4 text-center">
-          +351 912345678
+          +351 967563958
         </p>
         <p className="font-bellota text-2xl md:text-3xl lg:text-4xl mt-2 mb-4 text-center">
           email@gmail.com
@@ -154,10 +154,10 @@ const Home: React.FC = () => {
           Follow us
         </h3>
         <div className="flex space-x-4">
-          <a href="https://www.instagram.com" target="_blank" title='Instagram' rel="noopener noreferrer">
+          <a href="https://www.instagram.com/lighthouseluzholidays" target="_blank" title='Instagram' rel="noopener noreferrer">
             <FaInstagram className="text-black h-10 w-10" />
           </a>
-          <a href="https://wa.me/351912345678" target="_blank" title='Whatsapp' rel="noopener noreferrer">
+          <a href="https://wa.me/351967563958" target="_blank" title='Whatsapp' rel="noopener noreferrer">
             <FaWhatsapp className="text-black h-10 w-10" />
           </a>
         </div>
