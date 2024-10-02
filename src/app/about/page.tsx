@@ -9,7 +9,7 @@ const images = [
   '/assets/chosen_4.jpg',
   '/assets/chosen_3.jpg',
   '/assets/scenery_3.jpg',
-  '/assets/scenery_5.jpg',
+  '/assets/kayak.jpg',
   '/assets/scenery_2.jpg',
 ];
 
@@ -43,7 +43,7 @@ const About: React.FC = () => {
         </p>
       </section>
 
-      <section className="w-full h-auto p-8 md:p-16 bg-lightGray">
+      <section className="w-full h-auto p-8 md:p-16 bg-beige">
         <h2 className="font-bellota text-3xl md:text-5xl text-center mb-8">Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
           {images.map((src, index) => (
