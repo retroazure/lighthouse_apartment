@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const Home: React.FC = () => {
   return (
@@ -138,6 +139,29 @@ const Home: React.FC = () => {
           </ul>
         </div>
       </section>
+
+      <footer className="flex flex-col items-center justify-center w-full h-auto p-12 bg-beige">
+        <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center">
+          Contact Us
+        </h2>
+        <p className="font-bellota text-2xl md:text-3xl lg:text-4xl mt-2 mb-4 text-center">
+          +351 912345678
+        </p>
+        <p className="font-bellota text-2xl md:text-3xl lg:text-4xl mt-2 mb-4 text-center">
+          email@gmail.com
+        </p>
+        <h3 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center">
+          Follow us
+        </h3>
+        <div className="flex space-x-4">
+          <a href="https://www.instagram.com" target="_blank" title='Instagram' rel="noopener noreferrer">
+            <FaInstagram className="text-black h-10 w-10" />
+          </a>
+          <a href="https://wa.me/351912345678" target="_blank" title='Whatsapp' rel="noopener noreferrer">
+            <FaWhatsapp className="text-black h-10 w-10" />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 };
