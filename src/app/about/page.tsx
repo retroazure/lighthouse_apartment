@@ -9,7 +9,7 @@ const images = [
   '/assets/chosen_4.jpg',
   '/assets/chosen_3.jpg',
   '/assets/scenery_3.jpg',
-  '/assets/kayak.jpg',
+  '/assets/scenery_5.jpg',
   '/assets/scenery_2.jpg',
 ];
 
