@@ -32,7 +32,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-offWhite">
+      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12">
         <div className="w-full text-center md:text-left p-12 md:pr-20 md:hidden">
           <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
             Beyond the sights
