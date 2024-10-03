@@ -38,7 +38,7 @@ const Home: React.FC = () => {
             Beyond the sights
           </h2>
         </div>
-        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px] relative">
+        <div className="w-full md:w-8/20 h-[200px] sm:h-[400px] md:h-[400px] lg:h-[600px] relative"> {/* Adjusted height for mobile */}
           <Image
             src="/assets/pool.jpg"
             alt="Pool Image"
