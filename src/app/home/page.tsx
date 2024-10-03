@@ -192,7 +192,7 @@ const Home: React.FC = () => {
           Follow us
         </h3>
         <div className="flex space-x-4">
-          <a href="https://www.instagram.com/lighthouseluzholidays" target="_blank" title='Instagram' rel="noopener noreferrer">
+          <a href="https://www.instagram.com/lighthouseluzholydays" target="_blank" title='Instagram' rel="noopener noreferrer">
             <FaInstagram className="text-black h-10 w-10" />
           </a>
           <a href="https://wa.me/351967563958" target="_blank" title='Whatsapp' rel="noopener noreferrer">
