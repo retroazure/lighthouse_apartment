@@ -21,4 +21,9 @@ body {
   font-family: var(--font-bellota-text);
 }
 
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
 

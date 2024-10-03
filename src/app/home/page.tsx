@@ -17,7 +17,7 @@ const Home: React.FC = () => {
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
           <h1 className="font-bellota text-6xl md:text-8xl font-normal">
-            <span className="block">Welcome</span>
+            <span className="block">Welcome to</span>
             <span className="block">Lighthouse Apartment</span>
           </h1>
           <a
@@ -32,49 +32,66 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12">
-    <div className="w-full md:w-8/20 h-[400px] md:h-[600px] relative">
-        <Image
+      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-offWhite">
+        <div className="w-full text-center md:text-left p-12 md:pr-20 md:hidden">
+          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+            Beyond the sights
+          </h2>
+        </div>
+        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px] relative">
+          <Image
             src="/assets/pool.jpg"
             alt="Pool Image"
             fill
             style={{ objectFit: 'cover' }}
-            className="h-full w-full"
+            className="w-full h-full"
             quality={100}
-        />
-    </div>
-    <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
-        <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center md:text-left">
-            Beyond the sights
-        </h2>
-        <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
+          />
+        </div>
+        <div className="w-full text-center md:text-left p-12 md:pr-20 md:hidden">
+          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
             The resort offers two swimming pools, a restaurant, a coffee shop, and a small grocery store. For golf enthusiasts, it is also possible to practice your skills.
-        </p>
-    </div>
-</section>
+          </p>
+        </div>
+        <div className="hidden md:block w-full md:w-12/20 text-center md:text-left p-12 md:pr-20">
+          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+            Beyond the sights
+          </h2>
+          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
+            The resort offers two swimming pools, a restaurant, a coffee shop, and a small grocery store. For golf enthusiasts, it is also possible to practice your skills.
+          </p>
+        </div>
+      </section>
 
+      <section className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-auto p-12 bg-offWhite">
+        {/* Mobile-only heading */}
+        <div className="block md:hidden w-full text-center p-12">
+          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+            The Lighthouse Apartment
+          </h2>
+        </div>
 
-      <section className="flex flex-col-reverse md:flex-row items-center justify-center w-full h-auto p-12 bg-offWhite">
-        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pr-20">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center md:text-left">
+        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px] relative">
+          <Image
+            src="/assets/living_room.jpg"
+            alt="Living Room Image"
+            fill
+            style={{ objectFit: 'cover' }}
+            className="w-full h-full"
+            quality={100}
+          />
+        </div>
+
+        {/* Desktop-only content (including heading) */}
+        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
+          <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
             The Lighthouse Apartment
           </h2>
           <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
             A modern open space concept, offering a spacious living room with an elegant fireplace and a dining area where it’s glazed by huge windows, all facing a balcony and a private garden where you can enjoy your meals peacefully and also make a barbecue.
           </p>
         </div>
-        <div className="w-full md:w-8/20 h-[400px] md:h-[600px] relative">
-          <Image
-            src="/assets/living_room.jpg"
-            alt="Living Room Image"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="h-full w-full"
-            quality={100}
-          />
-        </div>
       </section>
-
 
       <section className="w-full h-auto p-8 bg-[#F6F3F3]">
         <div className="text-center p-8 md:pb-4">
@@ -84,7 +101,7 @@ const Home: React.FC = () => {
         </div>
         <div className="flex flex-col-reverse md:flex-row items-start justify-center w-full h-auto">
           <div className="w-full md:w-1/2 p-4 md:mr-4 flex flex-col items-center">
-            <div className="relative w-full h-[400px] md:h-[600px]">
+            <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px]">
               <Image
                 src="/assets/bathroom.jpg"
                 alt="Bathroom Image"
@@ -98,7 +115,7 @@ const Home: React.FC = () => {
             </p>
           </div>
           <div className="w-full md:w-1/2 p-4 md:ml-4 flex flex-col items-center">
-            <div className="relative w-full h-[400px] md:h-[600px]">
+            <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px]">
               <Image
                 src="/assets/bedroom.jpg"
                 alt="Bedroom Image"
@@ -114,9 +131,15 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-
       <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-blue">
-        <div className="w-full md:w-8/20 h-[400px] md:h-[550px] relative">
+        {/* Mobile-only heading */}
+        <div className="block md:hidden w-full text-center p-12">
+          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
+            The Environment
+          </h2>
+        </div>
+
+        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[550px] relative">
           <Image
             src="/assets/environment.jpg"
             alt="Environment Image"
@@ -126,8 +149,10 @@ const Home: React.FC = () => {
             quality={100}
           />
         </div>
+
+        {/* Desktop-only content (including heading) */}
         <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black text-center md:text-left">
+          <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
             The Environment
           </h2>
           <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-black">
@@ -137,16 +162,15 @@ const Home: React.FC = () => {
       </section>
 
 
-      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-offWhite">
-        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pr-20 order-2 md:order-1">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center md:text-left">
+
+      <section className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-auto p-12 bg-offWhite">
+        <div className="block md:hidden w-full text-center p-12">
+          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
             A Fully Equipped Kitchen
           </h2>
-          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
-            With a refrigerator, coffee machine, stove and oven, toaster and all that is needed for your daily meals.
-          </p>
         </div>
-        <div className="w-full md:w-8/20 h-[400px] md:h-[500px] relative order-1 md:order-2">
+
+        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] relative">
           <Image
             src="/assets/kitchen.jpg"
             alt="Kitchen Image"
@@ -155,6 +179,16 @@ const Home: React.FC = () => {
             className="h-full w-full"
             quality={100}
           />
+        </div>
+
+        {/* Desktop-only content (including heading) */}
+        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pr-20">
+          <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+            A Fully Equipped Kitchen
+          </h2>
+          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
+            With a refrigerator, coffee machine, stove and oven, toaster and all that is needed for your daily meals.
+          </p>
         </div>
       </section>
 
@@ -205,6 +239,7 @@ const Home: React.FC = () => {
         </div>
       </footer>
     </div>
+
   );
 };
 
