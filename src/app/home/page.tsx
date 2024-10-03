@@ -5,48 +5,54 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 const Home: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
+      <section className="relative w-full h-[750px] pt-16 md:pt-0">
+        <Image
+          src="/assets/main_scenery.jpg"
+          alt="Background Image"
+          fill
+          style={{ objectFit: 'cover', opacity: 0.85 }}
+          className="h-full w-full md:h-[750px]"
+          quality={100}
+          priority
+        />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
+          <h1 className="font-bellota text-6xl md:text-8xl font-normal">
+            <span className="block">Welcome</span>
+            <span className="block">Lighthouse Apartment</span>
+          </h1>
+          <a
+            href="mailto:lighthouseluz774@gmail.com?subject=Booking%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20apartment."
+            className="mt-10 px-8 py-4 bg-[#61B9C3] text-white font-bellota text-2xl md:text-3xl font-bold rounded-full"
+          >
+            Book Now
+          </a>
+          <div className="mt-2 text-black text-[16px] font-bold italic text-center w-full max-w-[200px]">
+            Guest transfer is available with our partners
+          </div>
+        </div>
+      </section>
+
       <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12">
-        <div className="w-full md:w-8/20 h-[400px] md:h-[600px] relative">
-          <Image
+    <div className="w-full md:w-8/20 h-[400px] md:h-[600px] relative">
+        <Image
             src="/assets/pool.jpg"
             alt="Pool Image"
             fill
             style={{ objectFit: 'cover' }}
             className="h-full w-full"
             quality={100}
-          />
-        </div>
-        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center md:text-left">
+        />
+    </div>
+    <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
+        <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center md:text-left">
             Beyond the sights
-          </h2>
-          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
+        </h2>
+        <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
             The resort offers two swimming pools, a restaurant, a coffee shop, and a small grocery store. For golf enthusiasts, it is also possible to practice your skills.
-          </p>
-        </div>
-      </section>
+        </p>
+    </div>
+</section>
 
-
-      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12">
-        <div className="w-full md:w-8/20 h-[400px] md:h-[600px] relative">
-          <Image
-            src="/assets/pool.jpg"
-            alt="Pool Image"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="h-full w-full"
-            quality={100}
-          />
-        </div>
-        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
-            Beyond the sights
-          </h2>
-          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
-            The resort offers two swimming pools, a restaurant, a coffee shop, and a small grocery store. For golf enthusiasts, it is also possible to practice your skills.
-          </p>
-        </div>
-      </section>
 
       <section className="flex flex-col-reverse md:flex-row items-center justify-center w-full h-auto p-12 bg-offWhite">
         <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pr-20">
