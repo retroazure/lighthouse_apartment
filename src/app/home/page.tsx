@@ -76,7 +76,7 @@ const Home: React.FC = () => {
 
       <section className="w-full h-auto p-8 bg-[#F6F3F3]">
   <div className="text-center p-8 md:pb-4">
-    <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-10 mb-10">
+    <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-5 mb-5 md:mt-10 md:mb-16">
       For your absolute relaxation
     </h2>
   </div>
@@ -111,6 +111,7 @@ const Home: React.FC = () => {
     </div>
   </div>
 </section>
+
 
       <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-blue">
         <div className="w-full md:w-8/20 h-[400px] md:h-[550px] relative">
