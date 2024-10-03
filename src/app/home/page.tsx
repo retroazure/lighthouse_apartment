@@ -22,7 +22,7 @@ const Home: React.FC = () => {
             <span className="block">Lighthouse Apartment</span>
           </h1>
           <a
-            href="mailto:yourbusiness@example.com?subject=Booking%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20apartment."
+            href="mailto:lighthouseluz774@gmail.com?subject=Booking%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20apartment."
             className="mt-10 px-8 py-4 bg-[#61B9C3] text-white font-bellota text-2xl md:text-3xl font-bold rounded-full"
           >
             Book Now
@@ -74,6 +74,44 @@ const Home: React.FC = () => {
           />
         </div>
       </section>
+
+
+      <section className="w-full h-auto p-8 bg-[#F6F3F3]">
+        <div className="text-center p-8">
+          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+            For your absolute relaxation
+          </h2>
+        </div>
+        <div className="flex flex-col md:flex-row items-start justify-center w-full h-auto p-8">
+          <div className="w-full md:w-1/2 p-4 md:mr-4 flex flex-col items-center">
+            <div className="relative w-full h-[300px] md:h-[400px]">
+              <Image
+                src="/assets/bathroom.jpg"
+                alt="Bathroom Image"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-center">
+              The huge bathroom has a Jacuzzi bath tub.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 p-4 md:ml-4 flex flex-col items-center">
+            <div className="relative w-full h-[300px] md:h-[400px]">
+              <Image
+                src="/assets/bedroom.jpg"
+                alt="Bedroom Image"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-center">
+              Upstairs stays the mezzanine bedroom with a comfortable double bed.
+            </p>
+          </div>
+        </div>
+      </section>
+
 
       <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-blue">
         <div className="w-full md:w-8/20 h-[350px] md:h-[500px] relative">
@@ -148,7 +186,7 @@ const Home: React.FC = () => {
           +351 967563958
         </p>
         <p className="font-bellota text-2xl md:text-3xl lg:text-4xl mt-2 mb-4 text-center">
-          email@gmail.com
+          lighthouseluz774@gmail.com
         </p>
         <h3 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center">
           Follow us
