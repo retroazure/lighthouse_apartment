@@ -5,7 +5,6 @@ import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 const Home: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
-      {/* Existing sections */}
       <section className="relative w-full h-[750px] pt-16 md:pt-0">
         <Image
           src="/assets/main_scenery.jpg"
@@ -34,7 +33,7 @@ const Home: React.FC = () => {
       </section>
 
       <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12">
-        <div className="w-full md:w-8/20 h-[500px] md:h-[600px] relative">
+        <div className="w-full md:w-8/20 h-[400px] md:h-[600px] relative">
           <Image
             src="/assets/pool.jpg"
             alt="Pool Image"
@@ -63,7 +62,7 @@ const Home: React.FC = () => {
             A modern open space concept, offering a spacious living room with an elegant fireplace and a dining area where it’s glazed by huge windows, all facing a balcony and a private garden where you can enjoy your meals peacefully and also make a barbecue.
           </p>
         </div>
-        <div className="w-full md:w-8/20 h-[500px] md:h-[600px] relative">
+        <div className="w-full md:w-8/20 h-[400px] md:h-[600px] relative">
           <Image
             src="/assets/living_room.jpg"
             alt="Living Room Image"
@@ -75,46 +74,44 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-
       <section className="w-full h-auto p-8 bg-[#F6F3F3]">
-  <div className="text-center p-8">
-    <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
-      For your absolute relaxation
-    </h2>
-  </div>
-  <div className="flex flex-col-reverse md:flex-row items-start justify-center w-full h-auto p-8">
-    <div className="w-full md:w-1/2 p-4 md:mr-4 flex flex-col items-center">
-      <div className="relative w-full h-[300px] md:h-[600px]">
-        <Image
-          src="/assets/bathroom.jpg"
-          alt="Bathroom Image"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
-      <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-center">
-        The huge bathroom has a Jacuzzi bath tub.
-      </p>
-    </div>
-    <div className="w-full md:w-1/2 p-4 md:ml-4 flex flex-col items-center">
-      <div className="relative w-full h-[300px] md:h-[600px]">
-        <Image
-          src="/assets/bedroom.jpg"
-          alt="Bedroom Image"
-          fill
-          style={{ objectFit: 'cover' }}
-        />
-      </div>
-      <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-center">
-        Upstairs stays the mezzanine bedroom with a comfortable double bed.
-      </p>
-    </div>
-  </div>
-</section>
-
+        <div className="text-center p-8">
+          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+            For your absolute relaxation
+          </h2>
+        </div>
+        <div className="flex flex-col-reverse md:flex-row items-start justify-center w-full h-auto p-8">
+          <div className="w-full md:w-1/2 p-4 md:mr-4 flex flex-col items-center">
+            <div className="relative w-full h-[300px] md:h-[600px]">
+              <Image
+                src="/assets/bathroom.jpg"
+                alt="Bathroom Image"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-center">
+              The huge bathroom has a Jacuzzi bath tub.
+            </p>
+          </div>
+          <div className="w-full md:w-1/2 p-4 md:ml-4 flex flex-col items-center">
+            <div className="relative w-full h-[300px] md:h-[600px]">
+              <Image
+                src="/assets/bedroom.jpg"
+                alt="Bedroom Image"
+                fill
+                style={{ objectFit: 'cover' }}
+              />
+            </div>
+            <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-center">
+              Upstairs stays the mezzanine bedroom with a comfortable double bed.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-blue">
-        <div className="w-full md:w-8/20 h-[450px] md:h-[550px] relative">
+        <div className="w-full md:w-8/20 h-[400px] md:h-[550px] relative">
           <Image
             src="/assets/environment.jpg"
             alt="Environment Image"
@@ -143,7 +140,7 @@ const Home: React.FC = () => {
             With a refrigerator, coffee machine, stove and oven, toaster and all that is needed for your daily meals.
           </p>
         </div>
-        <div className="w-full md:w-8/20 h-[350px] md:h-[500px] relative order-1 md:order-2">
+        <div className="w-full md:w-8/20 h-[400px] md:h-[500px] relative order-1 md:order-2">
           <Image
             src="/assets/kitchen.jpg"
             alt="Kitchen Image"
