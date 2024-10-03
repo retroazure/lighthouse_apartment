@@ -38,13 +38,12 @@ const Home: React.FC = () => {
             Beyond the sights
           </h2>
         </div>
-        <div className="w-full md:w-8/20 h-[200px] sm:h-[400px] md:h-[400px] lg:h-[600px] relative"> {/* Adjusted height for mobile */}
+        <div className="w-full md:w-8/20 relative h-[400px] lg:h-[600px]">
           <Image
             src="/assets/pool.jpg"
             alt="Pool Image"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="w-full h-full"
+            layout="fill"
+            className="object-cover" // Use Tailwind's utility class
             quality={100}
           />
         </div>
@@ -64,133 +63,137 @@ const Home: React.FC = () => {
       </section>
 
       <section className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-auto p-12 bg-offWhite">
-        {/* Mobile-only heading */}
-        <div className="block md:hidden w-full text-center p-12">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
-            The Lighthouse Apartment
-          </h2>
-        </div>
-
-        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px] relative">
-          <Image
-            src="/assets/living_room.jpg"
-            alt="Living Room Image"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="w-full h-full"
-            quality={100}
-          />
-        </div>
-
-        {/* Desktop-only content (including heading) */}
-        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
-          <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
-            The Lighthouse Apartment
-          </h2>
-          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
-            A modern open space concept, offering a spacious living room with an elegant fireplace and a dining area where it’s glazed by huge windows, all facing a balcony and a private garden where you can enjoy your meals peacefully and also make a barbecue.
-          </p>
-        </div>
-      </section>
-
-      <section className="w-full h-auto p-8 bg-[#F6F3F3]">
-        <div className="text-center p-8 md:pb-4">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-5 md:mt-5 md:mb-16">
-            For your absolute relaxation
-          </h2>
-        </div>
-        <div className="flex flex-col-reverse md:flex-row items-start justify-center w-full h-auto">
-          <div className="w-full md:w-1/2 p-4 md:mr-4 flex flex-col items-center">
-            <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px]">
-              <Image
-                src="/assets/bathroom.jpg"
-                alt="Bathroom Image"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="w-full"
-              />
+            {/* Mobile-only heading */}
+            <div className="block md:hidden w-full text-center p-12">
+                <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+                    The Lighthouse Apartment
+                </h2>
             </div>
-            <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-6 text-center">
-              The huge bathroom has a Jacuzzi bath tub.
-            </p>
-          </div>
-          <div className="w-full md:w-1/2 p-4 md:ml-4 flex flex-col items-center">
-            <div className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[600px]">
-              <Image
-                src="/assets/bedroom.jpg"
-                alt="Bedroom Image"
-                fill
-                style={{ objectFit: 'cover' }}
-                className="w-full"
-              />
+
+            <div className="w-full md:w-8/20 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
+                {/* Adjusted heights for better responsiveness */}
+                <Image
+                    src="/assets/living_room.jpg"
+                    alt="Living Room Image"
+                    fill
+                    style={{ objectFit: 'cover' }} // Ensures the image covers the container without distortion
+                    className="w-full h-full"
+                    quality={100}
+                />
             </div>
-            <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-6 text-center">
-              Upstairs stays the mezzanine bedroom with a comfortable double bed.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-12 bg-blue">
-        {/* Mobile-only heading */}
-        <div className="block md:hidden w-full text-center p-12">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
-            The Environment
-          </h2>
-        </div>
+            {/* Desktop-only content (including heading) */}
+            <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
+                <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+                    The Lighthouse Apartment
+                </h2>
+                <p className="font-bellota text-lg md:text-xl lg:text-2xl mt-4">
+                    {/* Adjusted text size for better readability on tablets */}
+                    A modern open space concept, offering a spacious living room with an elegant fireplace and a dining area where it’s glazed by huge windows, all facing a balcony and a private garden where you can enjoy your meals peacefully and also make a barbecue.
+                </p>
+            </div>
+        </section>
 
-        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[550px] relative">
-          <Image
-            src="/assets/environment.jpg"
-            alt="Environment Image"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="h-full w-full"
-            quality={100}
-          />
-        </div>
+        <section className="w-full h-auto p-6 md:p-8 bg-[#F6F3F3]"> {/* Adjusted padding for mobile */}
+            <div className="text-center p-6 md:pb-4">
+                <h2 className="font-bellota text-3xl md:text-4xl lg:text-5xl mt-2 mb-5 md:mt-5 md:mb-16">
+                    For your absolute relaxation
+                </h2>
+            </div>
+            <div className="flex flex-col md:flex-row items-start justify-center w-full h-auto">
+                <div className="w-full md:w-1/2 p-4 flex flex-col items-center">
+                    <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px]"> {/* Adjusted height for better visibility on mobile */}
+                        <Image
+                            src="/assets/bathroom.jpg"
+                            alt="Bathroom Image"
+                            fill
+                            style={{ objectFit: 'cover' }} // Maintains aspect ratio
+                            className="w-full"
+                        />
+                    </div>
+                    <p className="font-bellota text-lg md:text-xl lg:text-2xl mt-4 text-center"> {/* Adjusted text size for mobile */}
+                        The huge bathroom has a Jacuzzi bath tub.
+                    </p>
+                </div>
+                <div className="w-full md:w-1/2 p-4 flex flex-col items-center">
+                    <div className="relative w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px]"> {/* Adjusted height for better visibility on mobile */}
+                        <Image
+                            src="/assets/bedroom.jpg"
+                            alt="Bedroom Image"
+                            fill
+                            style={{ objectFit: 'cover' }} // Maintains aspect ratio
+                            className="w-full"
+                        />
+                    </div>
+                    <p className="font-bellota text-lg md:text-xl lg:text-2xl mt-4 text-center"> {/* Adjusted text size for mobile */}
+                        Upstairs stays the mezzanine bedroom with a comfortable double bed.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        {/* Desktop-only content (including heading) */}
-        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pl-20">
-          <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
-            The Environment
-          </h2>
-          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4 text-black">
-            Both sea and countryside, making it ideal for some relaxed and romantic holidays.
-          </p>
-        </div>
-      </section>
+      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-6 bg-blue">
+            {/* Mobile-only heading */}
+            <div className="block md:hidden w-full text-center p-6">
+                <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
+                    The Environment
+                </h2>
+            </div>
 
+            <div className="w-full md:w-8/20 h-[250px] sm:h-[350px] md:h-[400px] lg:h-[550px] relative">
+                {/* Adjusted height for better responsiveness on mobile */}
+                <Image
+                    src="/assets/environment.jpg"
+                    alt="Environment Image"
+                    fill
+                    style={{ objectFit: 'cover' }} // Ensures the image covers the container without distortion
+                    className="h-full w-full"
+                    quality={100}
+                />
+            </div>
+
+            {/* Desktop-only content (including heading) */}
+            <div className="w-full md:w-12/20 text-center md:text-left p-6 md:pl-20">
+                <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
+                    The Environment
+                </h2>
+                <p className="font-bellota text-lg md:text-xl lg:text-2xl mt-4 text-black">
+                    {/* Adjusted text size for better readability on mobile */}
+                    Both sea and countryside, making it ideal for some relaxed and romantic holidays.
+                </p>
+            </div>
+        </section>
 
 
       <section className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-auto p-12 bg-offWhite">
-        <div className="block md:hidden w-full text-center p-12">
-          <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
-            A Fully Equipped Kitchen
-          </h2>
-        </div>
+            <div className="block md:hidden w-full text-center p-12">
+                <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+                    A Fully Equipped Kitchen
+                </h2>
+            </div>
 
-        <div className="w-full md:w-8/20 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] relative">
-          <Image
-            src="/assets/kitchen.jpg"
-            alt="Kitchen Image"
-            fill
-            style={{ objectFit: 'cover' }}
-            className="h-full w-full"
-            quality={100}
-          />
-        </div>
+            <div className="w-full md:w-8/20 h-[300px] sm:h-[400px] md:h-[400px] lg:h-[500px] relative">
+                {/* Adjusted height for better responsiveness on mobile */}
+                <Image
+                    src="/assets/kitchen.jpg"
+                    alt="Kitchen Image"
+                    fill
+                    style={{ objectFit: 'cover' }} // Ensures the image covers the container without distortion
+                    className="h-full w-full"
+                    quality={100}
+                />
+            </div>
 
-        {/* Desktop-only content (including heading) */}
-        <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pr-20">
-          <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
-            A Fully Equipped Kitchen
-          </h2>
-          <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
-            With a refrigerator, coffee machine, stove and oven, toaster and all that is needed for your daily meals.
-          </p>
-        </div>
-      </section>
+            {/* Desktop-only content (including heading) */}
+            <div className="w-full md:w-12/20 text-center md:text-left p-12 md:pr-20">
+                <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4">
+                    A Fully Equipped Kitchen
+                </h2>
+                <p className="font-bellota text-xl md:text-2xl lg:text-3xl mt-4">
+                    With a refrigerator, coffee machine, stove and oven, toaster, and all that is needed for your daily meals.
+                </p>
+            </div>
+        </section>
 
 
       <section className="flex flex-col items-center justify-center w-full h-auto p-12 bg-lightGray">
