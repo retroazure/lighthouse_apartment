@@ -42,7 +42,7 @@ const Home: React.FC = () => {
           <Image
             src="/assets/pool.jpg"
             alt="Pool Image"
-            layout="fill"
+            fill
             className="object-cover" // Use Tailwind's utility class
             quality={100}
           />
