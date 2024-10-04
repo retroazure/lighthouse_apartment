@@ -132,37 +132,37 @@ const Home: React.FC = () => {
             </div>
         </section>
 
-      <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-6 bg-blue">
-            {/* Mobile-only heading */}
-            <div className="block md:hidden w-full text-center p-6">
-                <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
-                    The Environment
-                </h2>
-            </div>
+        <section className="flex flex-col md:flex-row items-center justify-center w-full h-auto p-6 md:p-12 bg-blue">
+    {/* Mobile-only heading */}
+    <div className="block md:hidden w-full text-center p-6">
+        <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
+            The Environment
+        </h2>
+    </div>
 
-            <div className="w-full md:w-8/20 h-[250px] sm:h-[350px] md:h-[400px] lg:h-[550px] relative">
-                {/* Adjusted height for better responsiveness on mobile */}
-                <Image
-                    src="/assets/environment.jpg"
-                    alt="Environment Image"
-                    fill
-                    style={{ objectFit: 'cover' }} // Ensures the image covers the container without distortion
-                    className="h-full w-full"
-                    quality={100}
-                />
-            </div>
+    <div className="w-full md:w-8/20 h-[250px] sm:h-[350px] md:h-[400px] lg:h-[550px] relative">
+        {/* Adjusted height for better responsiveness on mobile */}
+        <Image
+            src="/assets/environment.jpg"
+            alt="Environment Image"
+            fill
+            style={{ objectFit: 'cover' }} // Ensures the image covers the container without distortion
+            className="h-full w-full"
+            quality={100}
+        />
+    </div>
 
-            {/* Desktop-only content (including heading) */}
-            <div className="w-full md:w-12/20 text-center md:text-left p-6 md:pl-20">
-                <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
-                    The Environment
-                </h2>
-                <p className="font-bellota text-lg md:text-xl lg:text-2xl mt-4 text-black">
-                    {/* Adjusted text size for better readability on mobile */}
-                    Both sea and countryside, making it ideal for some relaxed and romantic holidays.
-                </p>
-            </div>
-        </section>
+    {/* Desktop-only content (including heading) */}
+    <div className="w-full md:w-12/20 text-center md:text-left p-6 md:pl-20 md:pr-20">
+        <h2 className="hidden md:block font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-black">
+            The Environment
+        </h2>
+        <p className="font-bellota text-lg md:text-xl lg:text-2xl mt-4 text-black">
+            Both sea and countryside, making it ideal for some relaxed and romantic holidays.
+        </p>
+    </div>
+</section>
+
 
 
       <section className="flex flex-col md:flex-row-reverse items-center justify-center w-full h-auto p-12 bg-offWhite">
