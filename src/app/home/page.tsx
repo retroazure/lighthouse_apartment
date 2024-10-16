@@ -219,6 +219,58 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      <section className="flex flex-col items-center justify-center w-full h-auto p-12 bg-lightGray">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8"> {/* Landscapes side by side */}
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[800px]">
+            <Image
+              src="/assets/landscape_1.jpg"
+              alt="Landscape 1"
+              width={2000}
+              height={1200}
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+              className="w-full h-full"
+            />
+          </div>
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[800px]">
+            <Image
+              src="/assets/landscape_2.jpg"
+              alt="Landscape 2"
+              width={2000}
+              height={1200}
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+              className="w-full h-full"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12"> {/* Added margin-top for gap */}
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[800px]"> {/* Enlarged */}
+            <Image
+              src="/assets/surfing_activity.jpg"
+              alt="Surfing Activity"
+              width={2000}
+              height={1200}
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+              className="w-full h-full"
+            />
+          </div>
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[800px]"> {/* Enlarged */}
+            <Image
+              src="/assets/kayak_activity.jpg"
+              alt="Kayak Activity"
+              width={2000}
+              height={1200}
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 50vw"
+              style={{ objectFit: 'cover' }}
+              className="w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
+
+
       <footer className="flex flex-col items-center justify-center w-full h-auto p-12 bg-beige">
         <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center">
           Contact Us
