@@ -10,7 +10,7 @@ const images = [
   '/assets/chosen_3.jpg',
   '/assets/scenery_3.jpg',
   '/assets/scenery_5.jpg',
-  '/assets/scenery_2.jpg',
+  '/assets/surfing_activity.jpg',
 ];
 
 const About: React.FC = () => {

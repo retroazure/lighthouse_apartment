@@ -217,7 +217,6 @@ const Home: React.FC = () => {
             <li className="marker:text-sm marker:text-gray-500">Wild West Coast tours</li>
           </ul>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8"> {/* Landscapes side by side */}
           <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[800px]">
             <Image
@@ -242,19 +241,8 @@ const Home: React.FC = () => {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12"> {/* Added margin-top for gap */}
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[800px]"> {/* Enlarged */}
-            <Image
-              src="/assets/surfing_activity.jpg"
-              alt="Surfing Activity"
-              width={2000}
-              height={1200}
-              sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, 50vw"
-              style={{ objectFit: 'cover' }}
-              className="w-full h-full"
-            />
-          </div>
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[800px]"> {/* Enlarged */}
+        <div className="flex justify-center mt-12">
+          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] md:w-[768px] lg:w-[800px] lg:h-[800px]"> {/* Ensuring wider on mobile */}
             <Image
               src="/assets/kayak_activity.jpg"
               alt="Kayak Activity"
@@ -266,8 +254,10 @@ const Home: React.FC = () => {
             />
           </div>
         </div>
+        <h2 className="font-bellota text-3xl md:text-4xl lg:text-5xl mt-12 mb-4 text-center"> {/* Slightly smaller text */}
+          Enjoy your stay
+        </h2>
       </section>
-
       <footer className="flex flex-col items-center justify-center w-full h-auto p-12 bg-beige">
         <h2 className="font-bellota text-4xl md:text-5xl lg:text-6xl mt-2 mb-4 text-center">
           Contact Us
